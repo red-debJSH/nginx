@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: nginx
+    volumes:
+    - ./sistemaDeVentasOnline:/usr/share/nginx/html:ro
+    - /etc/localtime:/etc/localtime:ro
+    ports:
+    - "80:80"
